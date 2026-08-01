@@ -1,0 +1,15 @@
+# Connection string Postgres dari Neon (Settings > Connection Details)
+DATABASE_URL=postgresql://neondb_owner:npg_0cIYEDtq7UWG@ep-dark-pond-azz3dnnv.c-3.ap-southeast-1.aws.neon.tech/neondb?sslmode=require
+
+# Generate acak, JANGAN pakai contoh ini:
+# node -e "console.log(require('crypto').randomBytes(48).toString('hex'))"
+JWT_SECRET=9fW3kLm8Qz2Xa7Rp1Hv5Nc6Td4Ys0BjE
+
+PORT=3001
+
+# Domain frontend yang boleh akses API ini, pisahkan koma kalau lebih dari satu.
+# Contoh: https://study-planner.vercel.app,https://nexa-study.pages.dev
+ALLOWED_ORIGINS=
+
+# Set "false" hanya kalau Postgres-mu tidak butuh SSL (jarang, biasanya untuk lokal).
+PGSSL=true
